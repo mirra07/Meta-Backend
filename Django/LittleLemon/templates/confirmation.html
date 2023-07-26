@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+        .confirmation {
+            text-align: center;
+            color: #009688;
+            font-size: 30px;
+        }
+        .tick-symbol {
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="confirmation">
+            Booking Confirmed &#10004;
+        </div>
+        <div>
+            <p><strong>Name:</strong> {{ name }}</p>
+            <p><strong>Phone Number:</strong> {{ phone }}</p>
+            <p><strong>Email:</strong> {{ email }}</p>
+            <p><strong>Number of People:</strong> {{ people }}</p>
+            <p><strong>Date:</strong> {{ date }}</p>
+            <p><strong>Meal:</strong> {{ meal }}</p>
+        </div>
+    </div>
+</body>
+</html>
