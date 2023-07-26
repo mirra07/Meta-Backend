@@ -22,7 +22,7 @@ def book_table(request):
             name = form.cleaned_data['name']
             phone = form.cleaned_data['phone']
             email = form.cleaned_data['email']
-            people = form.cleaned_data['people']
+            num_people = form.cleaned_data['num_people']
             date = form.cleaned_data['date']
             meal = form.cleaned_data['meal']
 
@@ -30,7 +30,7 @@ def book_table(request):
                 'name': name,
                 'phone': phone,
                 'email': email,
-                'people': people,
+                'people': num_people,
                 'date': date,
                 'meal': meal,
             })

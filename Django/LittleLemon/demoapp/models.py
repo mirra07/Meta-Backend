@@ -10,15 +10,15 @@ class Dish(models.Model):
     
 class Booking(models.Model):
     name = models.CharField(max_length=100)
-    email = models.EmailField()
     phone = models.CharField(max_length=15)
+    email = models.EmailField()
     num_people = models.PositiveIntegerField()
-    timing_choices = (
+    meal = (
         ('Breakfast', 'Breakfast'),
         ('Lunch', 'Lunch'),
         ('Dinner', 'Dinner'),
     )
-    timing = models.CharField(max_length=10, choices=timing_choices)
+    timing = models.CharField(max_length=10, choices=meal)
     date = models.DateField()
 
     def __str__(self):
