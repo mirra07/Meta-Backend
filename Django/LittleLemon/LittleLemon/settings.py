@@ -81,12 +81,10 @@ DATABASES = {
     },
     'lemondb': {   
  
-        'ENGINE': 'django.db.backends.mysql',   
+        'ENGINE': 'django.db.backends.mysqlite3',   
         'NAME': 'Lemon_database',   
         'USER': 'root',   
-        'PASSWORD': 'your_password',   
-        'HOST': '127.0.0.1',   
-        'PORT': '3306',   
+        'PASSWORD': 'your_password',     
         'OPTIONS': {   
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"   
         } 
