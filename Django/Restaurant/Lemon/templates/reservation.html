@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    body {
+        background-color: #d5efd3;
+    }
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgb(42, 58, 45);
+        border-radius: 10px;
+        opacity: 0.87;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group label {
+        width: 150px;
+        text-align: center;
+        margin-right: 20px;
+        color: #fff;
+    }
+    h1 {
+        color: #009688;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+    .btn-book {
+        background-color: rgb(142, 192, 151);
+        color: #fff;
+        border-color: #afffd5;
+    }
+
+</style>
+
+    <div class = "container">
+        <form action ="" method = "post">
+            {% csrf_token %}
+            {% for field in form %}
+            <div class="form-group">
+                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                {{ field }}
+            </div>
+            {% endfor %}
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-book ">Book Now</button>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}

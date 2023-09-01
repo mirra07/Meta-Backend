@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h2><center>About</center></h2>
+<div class="container-fluid" >
+    <div style="text-align: center;">
+        <p>
+            At Little Lemon, we bring you an authentic taste of Italy right to your table.
+            Step into our warm and inviting restaurant, where the tantalizing aroma of freshly prepared Italian delicacies will transport you straight to the charming streets of Italy.
+            Our chefs take pride in crafting every dish with the finest and freshest ingredients, ensuring an unforgettable dining experience. From classic pasta dishes to wood-fired pizzas, our menu offers a wide array of mouthwatering options that cater to all tastes. 
+            Come and experience the passion, artistry, and flavors that define Italian cooking.
+        </p>
+        <p>
+            We can't wait to welcome you to Little Lemon, where every bite tells a story of Italy.
+        </p>
+        <p>
+            Buon Appetito!
+        </p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{% static 'Table.png' %}" width="260px" height="270px" style="margin-left:50px; margin-right: 50px;">
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'restaurant.jpg' %}" width="260px" height="270px" style="margin-left:50px; margin-right: 50px;">
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'Table.png' %}" width="260px" height="270px" style="margin-left:50px; margin-right: 50px;">
+        </div>
+    </div>    
+</div>
+
+{% endblock %}

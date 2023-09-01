@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if menu %}
+<h2 style="color:rgb(42, 58, 45); text-align: center;">Menu</h2>
+<div class="m-container">
+{% for item in menu %}
+<div class="row" style="margin-top: 50px;">
+    <div class="col-md-4">
+        <p>{{ item.menu_item }}</p>
+    </div>
+    <div class="col-md-4">
+        <p>Rs.{{ item.price }}</p>
+    </div>
+</div>
+<div class="row" >
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+        <i><p>{{ item.desc }}</p></i>
+    </div>
+</div>
+{% endfor %}
+</div>
+{% else %}
+<p>No Items to Display</p>
+{% endif %}
+
+{% endblock %}
+
+

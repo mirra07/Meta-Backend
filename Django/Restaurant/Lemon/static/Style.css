@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(242, 223, 197);
+}
+
+.navbar-brand
+{
+    color: rgb(8, 249, 52);
+}
+
+.navbar .navbar-inverse{
+    color: rgb(8, 249, 52);
+    margin-top: 70px;
+}

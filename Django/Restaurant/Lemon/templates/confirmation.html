@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+        .c-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+        .confirmation {
+            text-align: center;
+            color: #009688;
+            font-size: 30px;
+        }
+        .c-txt {
+            text-align:justify;
+            color: #009688;
+            margin-left:220px;
+            margin-right: 50px;
+            margin-top: 25px;
+        }
+        .tick-symbol {
+            font-size: 60px;
+        }
+    </style>
+
+    <div class="c-container">
+        <div class="confirmation">
+            Booking Confirmed &#10004;
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{% static 'Table.png' %}" width="260px" height="270px" style="margin-left:135px; margin-right: 50px; margin-top: 25px;">
+                </div>
+            </div>    
+        </div>
+   
+        <div class="c-txt">
+            <p><strong>First Name:</strong> {{ first_name }}</p>
+            <p><strong>Last Name:</strong> {{ last_name }}</p>
+            <p><strong>Phone Number:</strong> {{ phone }}</p>
+            <p><strong>Email:</strong> {{ email }}</p>
+            <p><strong>Number of People:</strong> {{ people }}</p>
+            <p><strong>Date:</strong> {{ date }}</p>
+            <p><strong>Meal:</strong> {{ meal }}</p>
+        </div>
+
+    </div>
+
+{% endblock %}
